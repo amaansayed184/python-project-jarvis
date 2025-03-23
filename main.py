@@ -30,7 +30,10 @@ def battery():
     percent=battery.percent
     status= battery.power_plugged
     speak( "your battery percentage is "+ str(percent))
-    if plu
+    if status==True:
+        speak("and your device is on charging")
+    else:
+        speak("and your device is not on charging")
 def screenshot():
     name_img= tt.time()
     name_img=f'D:\\progg lang\\python\\venv\\screenshot\\{name_img}.png'
