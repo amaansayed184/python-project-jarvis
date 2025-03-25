@@ -75,7 +75,7 @@ def processCommand(c):
     elif "message" in c.lower():
         user_name = {
             'john': '+9184XXXXXXXX',
-            'alex': '+919307788197'}
+            'alex': '+9193XXXXXXXX'}
 
         try:
             speak("To whom do you want to send a message?")
