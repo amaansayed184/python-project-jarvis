@@ -24,3 +24,10 @@ This is a voice-controlled personal assistant named Jarvis, built using Python. 
 
 8.Real-time Clock:
   Tells the current time when asked.
+
+9.Weather Forecast:
+  Fetches and announces the current weather for a specified city using the OpenWeatherMap API.
+  To use this feature, you need to:
+    - Sign up for a free API key at [OpenWeatherMap](https://openweathermap.org/appid).
+    - Replace `"YOUR_API_KEY_HERE"` in `main.py` with your actual API key.
+  Command: "Jarvis, what's the weather in [city name]?" (after activation word)
