@@ -1,6 +1,6 @@
 # python-project-jarvis
-This is a voice-controlled personal assistant named Jarvis, built using Python. It performs various tasks like opening websites, checking battery status, sending WhatsApp messages, taking screenshots, flipping a coin, rolling a die, and telling the time.
-📌 Features
+This is a voice-controlled personal assistant named Jarvis, built using Python. It performs various tasks like opening websites, checking battery status, sending WhatsApp messages, taking screenshots, flipping a coin, rolling a die, and telling the time.\
+📌 Features\
 1.Voice Recognition:
   Uses speech_recognition to understand voice commands.
   
