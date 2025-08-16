@@ -4,7 +4,6 @@ import webbrowser
 import datetime
 from time import sleep
 import pyautogui
-import pyfreeze
 import time as tt
 import random
 import psutil
@@ -80,7 +79,7 @@ def processCommand(c):
         try:
             speak("To whom do you want to send a message?")
             with sr.Microphone() as source:
-                audio = recognizer.listen(source, timeout=3000, phrase_time_limit=3000)
+                audio = recognizer.listen(source, timeout=3, phrase_time_limit=3)
                 name = recognizer.recognize_google(audio).lower().strip()
 
             if name in user_name:
@@ -88,7 +87,7 @@ def processCommand(c):
                 speak("What is the message?")
                 with sr.Microphone() as source:
                     print("Listening for message...")
-                    audio_msg = recognizer.listen(source, timeout=3000, phrase_time_limit=3000)
+                    audio_msg = recognizer.listen(source, timeout=3, phrase_time_limit=3)
                 message = recognizer.recognize_google(audio_msg)
                 print(f"Recognized Message: {message}")
                 sendmsg(phone_no, message)
@@ -108,7 +107,7 @@ if __name__ == "__main__":
         try:
             with sr.Microphone() as source:
                 print("Listening...")
-                audio = r.listen(source, timeout=3000, phrase_time_limit=3000)
+                audio = r.listen(source, timeout=3, phrase_time_limit=3)
                 word = r.recognize_google(audio)
                 if word.lower() == "hello":
                     speak("Yes sir.")
@@ -119,3 +118,4 @@ if __name__ == "__main__":
                         processCommand(command)
         except Exception as e:
             print(f"Error: {e}")
+
